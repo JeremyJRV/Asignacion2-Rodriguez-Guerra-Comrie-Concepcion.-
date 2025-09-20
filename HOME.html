@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <!-- Encabezado con título y menú de navegación -->
     <header>
         <h1>Salud Vital</h1>
         <nav>
@@ -18,25 +19,43 @@
         </nav>
     </header>
 
-    <section>
-        <h2>BLOG DE NOTICIAS</h2>
-        <ul>
-            <li>Alimentación saludable</li>
-            <li>Ejercicio y bienestar</li>
-            <li>Consejos para dormir mejor</li>
-        </ul>
-    </section>
+    <main>
+        <!-- Sección con lista de temas del blog -->
+        <section>
+            <h2>BLOG DE NOTICIAS</h2>
+            <ul>
+                <li>Alimentación saludable</li>
+                <li>Ejercicio y bienestar</li>
+                <li>Consejos para dormir mejor</li>
+            </ul>
+        </section>
 
-    <section class="noticias">
-        <article>
-            <h3>Importancia de la hidratación</h3>
-            <img src="Agua.png" alt="Vaso de agua">
-            <p>La hidratación es fundamental para mantener el cuerpo saludable...</p>
-            <button onclick="window.open('https://cieah.ulpgc.es/es/hidratacion-humana/hidratacion')">Ver Más</button>
-        </article>
-        <!-- Repetir para otras noticias -->
-    </section>
+        <!-- Sección con noticias destacadas -->
+        <section class="noticias">
+            <article>
+                <h3>La importancia de la hidratación</h3>
+                <img src="Agua.png" alt="Vaso de agua">
+                <p>La hidratación es fundamental para mantener el cuerpo saludable y optimizar las funciones fundamentales.</p>
+                <button onclick="window.open('https://cieah.ulpgc.es/es/hidratacion-humana/hidratacion')">Ver Más</button>
+            </article>
 
+            <article>
+                <h3>Beneficios del ejercicio diario</h3>
+                <img src="Ejercicio.png" alt="Persona haciendo ejercicio">
+                <p>El ejercicio regular mejora la salud cardiovascular, fortalece músculos y ayuda a mantener un peso saludable.</p>
+                <button onclick="window.open('https://www.mayoclinic.org/es/healthy-lifestyle/fitness/in-depth/exercise/art-20048389')">Ver Más</button>
+            </article>
+
+            <article>
+                <h3>Consejos para un buen sueño</h3>
+                <img src="Sueño.png" alt="Persona durmiendo plácidamente">
+                <p>Un sueño reparador es clave para la salud mental y física. Descubre cómo mejorar tus hábitos de descanso.</p>
+                <button onclick="window.open('https://www.mayoclinic.org/es/healthy-lifestyle/adult-health/in-depth/sleep/art-20048379')">Ver Más</button>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de página con enlaces y selector de idioma -->
     <footer>
         <nav>
             <b><a href="#">Preguntas frecuentes</a></b> |

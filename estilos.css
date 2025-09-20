@@ -1,0 +1,111 @@
+/* Estilos básicos para fondo negro y texto claro */
+body {
+    background-color: #000000; /* fondo negro */
+    color: #f0f0f0; /* texto claro para contraste */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #00ffff; /* color para enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    background-color: #111111;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 10px 15px;
+}
+
+section {
+    padding: 20px;
+}
+
+.noticias {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+article {
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    text-align: center; 
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+button {
+    background-color: #00ffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #00cccc;
+}
+
+footer {
+    background-color: #111111;
+    padding: 15px 20px;
+    text-align: center;
+    color: #888888;
+}
+
+footer nav b a {
+    color: #00ffff;
+}
+
+label, select {
+    color: #f0f0f0;
+    margin-left: 10px;
+}
+select {
+    background-color: #222222; /* fondo oscuro para el dropdown */
+    color: #f0f0f0; /* texto claro */
+    border: 1px solid #00ffff;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Opciones del dropdown */
+select option {
+    background-color: #222222; /* fondo oscuro para las opciones */
+    color: #f0f0f0; /* texto claro */
+}
