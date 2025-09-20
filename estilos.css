@@ -1,14 +1,13 @@
-/* Estilos básicos para fondo negro y texto claro */
 body {
-    background-color: #000000; /* fondo negro */
-    color: #f0f0f0; /* texto claro para contraste */
+    background-color: #4A90E2; /* azul claro vibrante */
+    color: #FFFFFF; /* texto blanco */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 a {
-    color: #00ffff; /* color para enlaces */
+    color: #FFEB3B; /* amarillo brillante */
     text-decoration: none;
 }
 
@@ -21,7 +20,7 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px;
-    background-color: #111111;
+    background-color: #357ABD; /* azul oscuro */
     margin: 0;
 }
 
@@ -40,7 +39,7 @@ section {
 }
 
 article {
-    background-color: #222222;
+    background-color: #D0E6FF; /* azul muy claro */
     padding: 15px;
     border-radius: 8px;
     width: 30%;
@@ -48,8 +47,9 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
+    color: #000000; /* texto negro para contraste en artículos */
 }
 
 article img {
@@ -61,51 +61,50 @@ article img {
 
 article p {
     margin-top: 0;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 button {
-    background-color: #00ffff;
+    background-color: #FF6F00; /* naranja brillante */
     border: none;
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
-    color: #000;
+    color: #FFFFFF; /* texto blanco */
     font-weight: bold;
     margin-top: 10px;
-    align-self: center;
 }
 
 button:hover {
-    background-color: #00cccc;
+    background-color: #e65c00;
 }
 
 footer {
-    background-color: #111111;
+    background-color: #357ABD; /* azul oscuro */
     padding: 15px 20px;
     text-align: center;
-    color: #888888;
+    color: #FFFFFF;
 }
 
 footer nav b a {
-    color: #00ffff;
+    color: #FFEB3B; /* amarillo brillante */
 }
 
 label, select {
-    color: #f0f0f0;
+    color: #FFFFFF;
     margin-left: 10px;
 }
+
 select {
-    background-color: #222222; /* fondo oscuro para el dropdown */
-    color: #f0f0f0; /* texto claro */
-    border: 1px solid #00ffff;
+    background-color: #357ABD; /* azul oscuro */
+    color: #FFFFFF;
+    border: 1px solid #FFEB3B;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/* Opciones del dropdown */
 select option {
-    background-color: #222222; /* fondo oscuro para las opciones */
-    color: #f0f0f0; /* texto claro */
+    background-color: #357ABD;
+    color: #FFFFFF;
 }
