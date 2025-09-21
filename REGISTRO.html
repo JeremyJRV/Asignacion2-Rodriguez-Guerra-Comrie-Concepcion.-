@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud Vital - Formulario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            /* Imagen de fondo con vegetales */
+            background-image: url('vegetales.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #4caf50;
+            border-radius: 10px;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            background: #2e7d32;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            background: #1b5e20;
+        }
+        
+        section {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(249, 249, 249, 0.9);
+            border-radius: 10px;
+            border-left: 5px solid #4caf50;
+        }
+        
+        h2 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            border-color: #4caf50;
+            outline: none;
+        }
+        
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 10px 0;
+        }
+        
+        .range-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        input[type="range"] {
+            flex: 1;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+        }
+        
+        output {
+            background: #4caf50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            min-width: 60px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        button {
+            background: #4caf50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            background: #2e7d32;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(76, 175, 80, 0.9);
+            border-radius: 10px;
+            color: white;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .radio-group, .checkbox-group {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Salud Vital</h1>
+            <nav>
+                <a href="HOME.html">Home</a>
+                <a href="BLOG.html">Blog</a>
+                <a href="REGISTRO.html">Registro</a>
+                <a href="CONTACTO.html">Contacto</a>
+            </nav>
+        </header>
+        
+        <main>
+            <section>
+                <h2>Información Personal</h2>
+                
+                <div class="form-group">
+                    <label>Nombre completo *</label>
+                    <input type="text" placeholder="Ej: María López" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Fecha de nacimiento *</label>
+                    <input type="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Correo electrónico *</label>
+                    <input type="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input type="text" placeholder="1234-5678" pattern="[0-9]{4}-[0-9]{4}">
+                </div>
+                
+                <div class="form-group">
+                    <label>Género *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="genero" required> Masculino</label>
+                        <label><input type="radio" name="genero"> Femenino</label>
+                        <label><input type="radio" name="genero"> Otro</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Dirección</label>
+                    <input type="text" placeholder="Calle, número, ciudad">
+                </div>
+            </section>
+            
+            <section>
+                <h2>Datos de Salud</h2>
+                
+                <div class="form-group">
+                    <label>Peso (kg) *</label>
+                    <input type="number" placeholder="Ej: 68.5" min="1" step="0.1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Altura (cm) *</label>
+                    <input type="number" placeholder="Ej: 175" min="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Nivel de actividad física *</label>
+                    <select required>
+                        <option value="">Selecciona una opción</option>
+                        <option>Sedentario</option>
+                        <option>Ligero</option>
+                        <option>Moderado</option>
+                        <option>Intenso</option>
+                    </select>
+                </div>
+            </section>
+            
+            <section>
+                <h2>Objetivos y Preferencias</h2>
+                
+                <div class="form-group">
+                    <label>Objetivo nutricional *</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> Perder peso</label>
+                        <label><input type="checkbox"> Ganar masa muscular</label>
+                        <label><input type="checkbox"> Mejorar la salud</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Alergias o restricciones alimentarias</label>
+                    <textarea placeholder="Ej: Lactosa, gluten..." rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Agua consumida diariamente (litros)</label>
+                    <div class="range-container">
+                        <input type="range" min="0.5" max="5" step="0.5" value="1.5">
+                        <output>1.5 L</output>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Foto de alimentos comunes</label>
+                    <input type="file">
+                </div>
+                
+                <div class="form-group">
+                    <label>Hora habitual de la comida principal</label>
+                    <input type="time">
+                </div>
+            </section>
+            
+            <button type="submit">Enviar Información</button>
+        </main>
+        
+        <footer>
+            <p>© 2023 Salud Vital - Todos los derechos reservados</p>
+            <p>
+                <a href="#">Preguntas frecuentes</a> |
+                <a href="#">Privacidad</a> |
+                <a href="#">Términos</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Actualizar el valor del rango de agua
+        const aguaSlider = document.querySelector('input[type="range"]');
+        const aguaOutput = document.querySelector('output');
+        
+        aguaSlider.addEventListener('input', function() {
+            aguaOutput.textContent = this.value + ' L';
+        });
+        
+        // Validación del formulario
+        document.querySelector('button').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('¡Formulario enviado con éxito! Gracias por completar tu información.');
+        });
+    </script>
+</body>
+</html>
