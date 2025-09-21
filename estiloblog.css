@@ -1,0 +1,173 @@
+/* === RESETEO GENERAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* === FONDO CON IMAGEN === */
+    background-image: url("img/Omelette.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === ENCABEZADO === */
+header {
+    background: rgba(0, 150, 136, 0.95);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;   /* fijo arriba */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* === MENÚ DE NAVEGACIÓN === */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;  /* Menú centrado en fila */
+    gap: 30px;                /* Espacio entre items */
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ffd54f;
+}
+
+/* === CONTENIDO PRINCIPAL === */
+main {
+    max-width: 900px;
+    margin: 100px auto 40px auto; /* antes 120px */
+    background: rgba(255,255,255,0.9); /* blanco translúcido */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Sección principal de receta */
+.receta {
+    text-align: center;
+}
+
+.receta h2 {
+    font-size: 1.8rem;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.receta img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.receta h3 {
+    text-align: left; 
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: justify;      
+}
+
+/* Subtítulos */
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #004d40;
+    border-left: 6px solid #009688;
+    padding-left: 10px;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+/* === TABLA NUTRICIONAL === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background: #009688;
+    color: white;
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+    background: rgba(0, 150, 136, 0.95);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffd54f;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Selector de idioma */
+select {
+    margin-left: 10px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
