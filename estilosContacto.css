@@ -1,0 +1,87 @@
+/* ====== Estilos base ====== */
+:root{
+  --fondo: #cfe9ff;          /* similar a lightblue pero más suave */
+  --texto: #1f2937;          /* gris oscuro legible */
+  --borde: #e5e7eb;          /* gris claro */
+  --sombra: 0 6px 14px rgba(0,0,0,.08);
+}
+
+*{ box-sizing: border-box; }
+
+.body{
+  background: var(--fondo);
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--texto);
+}
+
+.header{ padding: 16px 20px; }
+.titulo{ margin: 0 0 8px 0; }
+
+/* Menú superior */
+.menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+}
+.menu a{
+  text-decoration: none;
+  color: inherit;
+}
+.menu a:hover{ text-decoration: underline; }
+
+/* Contenido */
+.contenido{ padding: 16px 20px 28px; }
+.subtitulo{ margin: 0 0 8px 0; }
+.intro{ margin: 0 0 18px 0; }
+
+/* ====== Grid de contenedores ====== */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* Contenedores */
+.card{
+  background: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 16px;
+  min-height: 320px;           /* tamaño mínimo homogéneo */
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Variantes de fondo (distintos del body) */
+.card-azul  { background: #F3F7FF; border-color: #e0e7ff; }
+.card-durazno{ background: #FFF7F3; border-color: #ffe0d1; }
+.card-verde { background: #F6FFF3; border-color: #dff5d8; }
+.card-ivory { background: #FFFDF3; border-color: #ead8ff; }
+
+/* Avatar */
+.avatar{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--borde);
+  align-self: start;
+}
+
+/* Footer */
+.footer{
+  padding: 16px 20px;
+  border-top: 1px solid var(--borde);
+}
+.footer a{
+  color: inherit;
+  text-decoration: none;
+}
+.footer a:hover{ text-decoration: underline; }
+.idioma{ margin-top: 8px; }
+.copy{ font-size: .9rem; color: #444; margin-top: 8px; }
